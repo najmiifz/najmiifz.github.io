@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-image: url(image/backround2.jpg);
+            background-image: url(image/latar.jpg);
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -21,7 +21,7 @@
         .navbar {
             background-color:white;
             backdrop-filter: blur(5px);
-            opacity: 0.5;
+            opacity: 0.2;
         }
 
         .navbar-nav {
@@ -56,7 +56,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url("image/backround.jpg");
+            background-image: url("image/backround2.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -115,14 +115,17 @@
                             Profile
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="education.html">Education</a></li>
-                            <li><a class="dropdown-item" href="p.html">Experience</a></li>
+                            <li><a class="dropdown-item" href="#l">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Education</a></li>
+                            <li><a class="dropdown-item" href="#">Experience</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="#">NAJMIIFZ</a>
+            <a class="navbar-brand" href="https://www.instagram.com/najmiifz" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 24px; height: 24px; vertical-align: middle;">
+              NAJMIIFZ
+            </a>
         </div>
     </nav>
     
@@ -135,7 +138,7 @@
             </div>
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" id="Profile">
                     <div class="main-section row align-items-center">
                         <div class="col-md-4 text-center content">
                             <img src="image/fotonajmi.png" alt="Profile Photo" class="profile-photo">
@@ -153,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="Education">
                     <div class="main-section row align-items-center">
                         <div class="col-md-4 text-center content">
                             <img src="image/education.png" alt="UI/UX Skills" class="profile-photo">
@@ -162,13 +165,14 @@
                             <h1>Education</h1>
                             <p class="text-muted">Pendidikan</p>
                             <div class="description">
-                               S1 Teknik Informatika Institut Digital Ekonomi LPKIA Bandung (2023-2027)
+                               <p></p>S1 Teknik Informatika Institut Digital Ekonomi LPKIA Bandung (2023-2027)</p>
                                <p>Teknik Komputer Dan Jaringan SMK Indonesia Raya Bandung (2019-2022)</p>
+                               <p>SMP indonesia Raya Bandung (2016-2019)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="Experience">
                     <div class="main-section row align-items-center">
                         <div class="col-md-4 text-center content">
                             <img src="image/experience.png" alt="Hobby" class="profile-photo">
@@ -198,5 +202,7 @@
             </button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
